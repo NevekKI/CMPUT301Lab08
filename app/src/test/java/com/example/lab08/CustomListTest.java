@@ -13,12 +13,22 @@ public class CustomListTest {
     }
 
     @Test
-    public void deleteCity(){
+    public void deleteCity() {
         CustomList list = new CustomList();
         City calgary = new City("Calgary", "Ab");
         list.addCity(calgary);
         list.deleteCity(calgary);
 
         assertFalse(list.hasCity(calgary));
+    }
+
+    @Test
+    public void testCountCities() {
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        list.addCity(calgary);
+
+        assertEquals(1, list.countCities());
+
     }
 }
