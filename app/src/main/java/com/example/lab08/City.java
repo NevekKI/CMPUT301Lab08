@@ -1,5 +1,8 @@
 package com.example.lab08;
 
+/**
+ * Test for lab 8
+ */
 public class City {
     private String city;
     private String province;
